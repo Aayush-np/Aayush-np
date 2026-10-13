@@ -27,26 +27,26 @@
 
 ## 📌 Featured Projects
 
-| Project | Description | Tech Stack |
-|---|---|---|
-| [**PotatoHQ**](https://github.com/Aayush-np/PotatoHQ) 🥔 | Self-hosted real-time hangout for friend groups: private rooms, live chat, WebRTC voice, and a shared music queue synchronized by the server. Installable as a PWA | Python · FastAPI · SQLite · WebSockets · WebRTC · Vanilla JS |
-| [**bhoomi-infratech**](https://github.com/Aayush-np/bhoomi-infratech) | Production-grade construction company website with a custom admin CMS, secured with PostgreSQL row-level security | JavaScript · Supabase · PostgreSQL · Netlify |
-| [**collab-portal**](https://github.com/Aayush-np/collab-portal) | **CollabHub**: a full-stack platform where students discover projects, find teammates, and chat in real time | React · Express · MongoDB · Socket.IO |
-| [**bill-nepal**](https://github.com/Aayush-np/bill-nepal) | Nepal-focused restaurant POS with IRD-compliant VAT billing, offline-first design, bilingual UI (EN/नेपाली), Bikram Sambat dates, and local payment rails | React · TypeScript · Vite |
+| Project | Description | Tech Stack | Live |
+|---|---|---|---|
+| [**bill-nepal**](https://github.com/Aayush-np/bill-nepal) | Prototype of my startup idea: a Nepal-focused POS for restaurants, cafés, and hotels with IRD-compliant VAT billing, offline-first design, bilingual UI (EN/नेपाली), and Bikram Sambat dates | React · TypeScript · Vite | [🔗 Live demo](https://bill-nepal.vercel.app/) |
+| [**bhoomi-infratech**](https://github.com/Aayush-np/bhoomi-infratech) | Production-grade construction company website with a custom admin CMS, secured with PostgreSQL row-level security | JavaScript · Supabase · PostgreSQL · Netlify | [🔗 Live site](https://bhoomiinfratech.netlify.app/) |
+| [**collab-portal**](https://github.com/Aayush-np/collab-portal) | **CollabHub**: a full-stack platform where students discover projects, find teammates, and chat in real time | React · Express · MongoDB · Socket.IO | [🔗 Live demo](https://collab-portal-azure.vercel.app/) |
+| [**PotatoHQ**](https://github.com/Aayush-np/PotatoHQ) 🥔 | Self-hosted real-time hangout for friend groups: private rooms, live chat, WebRTC voice, and a shared music queue synchronized by the server. Installable as a PWA | Python · FastAPI · SQLite · WebSockets · WebRTC · Vanilla JS | Self-hosted ([run it in minutes](https://github.com/Aayush-np/PotatoHQ)) |
 
 ---
 
-## 🥔 Spotlight: PotatoHQ
+## 🧾 Spotlight: Bill Nepal
 
-A self-hosted clubhouse for a friend group, running as **one Python process and a folder of static files**: no build tools, no npm install, no message queues.
+A working prototype of my startup idea: a SaaS point-of-sale built around how Nepali restaurants, cafés, and hotels actually operate.
 
-- **Real-time core:** a WebSocket hub handles chat, presence, voice signaling, and music control, with history, typing indicators, replies, reactions, and unread badges
-- **Voice:** WebRTC mesh with mute, deafen, per-user volume (0-200%), push-to-talk, device selection, and a listen-only fallback
-- **Synchronized playback:** a server-authoritative player using anchor-based position math, 10-second reconciliation ticks, client drift self-healing, and version counters with room locks to prevent double transitions
-- **Security:** scrypt password hashing, hashed HttpOnly session tokens, CSRF header guard, origin-checked WebSockets, rate limits, parameterized SQL, and magic-byte-checked avatar uploads
-- **Testing:** protocol smoke tests, two-browser end-to-end tests with real WebRTC peer connections, and server kill/restart recovery tests
-- **Deployment:** runs on a LAN, behind a Cloudflare Tunnel, or on an always-free cloud VM with Docker and Caddy
-- **Installable:** PWA with a service worker for offline shell caching
+- **Tax compliance:** IRD/CBMS-compliant VAT billing
+- **Kitchen flow:** KOT (kitchen order ticket) workflow from order to kitchen
+- **Offline-first:** designed to keep working when the connection drops
+- **Bilingual:** full English and नेपाली interface
+- **Local context:** Bikram Sambat dates and local payment rails
+- **Modern stack:** React, TypeScript, and Vite
+- 🔗 [Try the live prototype](https://bill-nepal.vercel.app/)
 
 ---
 
